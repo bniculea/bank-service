@@ -1,4 +1,4 @@
-package com.quarkus;
+package com.quarkus.resources;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
