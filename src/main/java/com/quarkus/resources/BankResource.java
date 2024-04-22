@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-@Path("/")
+@Path("/bank")
 public class BankResource {
 
     @ConfigProperty(name="bank.name", defaultValue = "Bank of Poor Fellas")
@@ -54,6 +54,10 @@ public class BankResource {
         return map;
     }
 
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/supportmapping")
     public Map<String, String> getSupportMapping() {
         HashMap<String, String> map = getSupport();
 
